@@ -1,4 +1,4 @@
-class URL
+class URI
   attr_reader :scheme, :username, :password, :host, :port, :path, :search, :hash
 
   PORTS = {

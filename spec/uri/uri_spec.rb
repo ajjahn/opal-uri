@@ -1,8 +1,8 @@
 require 'uri'
 
-RSpec.describe URL do
+RSpec.describe URI do
   context 'when all fields are provided' do
-    let(:url) { URL.new('https://me:secret@example.com:8080/path?foo=bar&foo=baz&omg=lol#zomghash') }
+    let(:url) { URI.new('https://me:secret@example.com:8080/path?foo=bar&foo=baz&omg=lol#zomghash') }
 
     it 'parses the scheme' do
       expect(url.scheme).to eq 'https'
@@ -40,7 +40,7 @@ RSpec.describe URL do
   end
 
   context 'when only the scheme, host, and path are present' do
-    let(:url) { URL.new('https://github.com/clearwater-rb/clearwater') }
+    let(:url) { URI.new('https://github.com/clearwater-rb/clearwater') }
 
     it 'parses the scheme' do
       expect(url.scheme).to eq 'https'
