@@ -9,7 +9,7 @@ RSpec.describe URI do
     end
 
     it 'parses the username' do
-      expect(url.username).to eq 'me'
+      expect(url.user).to eq 'me'
     end
 
     it 'parses the password' do

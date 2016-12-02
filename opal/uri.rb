@@ -1,5 +1,5 @@
 class URI
-  attr_reader :scheme, :username, :password, :host, :port, :path, :search, :hash
+  attr_reader :scheme, :user, :password, :host, :port, :path, :search, :hash
 
   PORTS = {
     http: 80,
@@ -19,7 +19,7 @@ class URI
 
     connection_data = connection_data.split(/@/)
     if connection_data.size > 1
-      @username, @password = connection_data.first.split(/:/)
+      @user, @password = connection_data.first.split(/:/)
     end
     @host, @port = connection_data.last.split(/:/)
 
