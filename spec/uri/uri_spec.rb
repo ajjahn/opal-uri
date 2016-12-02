@@ -8,6 +8,10 @@ RSpec.describe URI do
       expect(url.scheme).to eq 'https'
     end
 
+    it 'parses the userinfo' do
+      expect(url.userinfo).to eq 'me:secret'
+    end
+
     it 'parses the username' do
       expect(url.user).to eq 'me'
     end
@@ -34,8 +38,8 @@ RSpec.describe URI do
       expect(url.query[:omg]).to eq 'lol'
     end
 
-    it 'parses the hash' do
-      expect(url.hash).to eq '#zomghash'
+    it 'parses the fragment' do
+      expect(url.fragment).to eq '#zomghash'
     end
   end
 
