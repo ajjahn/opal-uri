@@ -6,10 +6,10 @@ require 'opal/uri/version'
 Gem::Specification.new do |spec|
   spec.name          = "opal-uri"
   spec.version       = Opal::URI::VERSION
-  spec.authors       = ["Jamie Gaskins"]
+  spec.authors       = ["Jamie Gaskins", "Adam Jahn"]
   spec.email         = ["jgaskins@gmail.com"]
 
-  spec.summary       = %q{Minimalist URI support for Opal}
+  spec.summary       = %q{Minimal URI support for Opal}
   spec.homepage      = "https://github.com/ajjahn/opal-uri"
   spec.license       = "MIT"
 
