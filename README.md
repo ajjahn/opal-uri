@@ -2,6 +2,8 @@
 
 It's like Ruby `URI`, but smaller. It provides minimal URI support that is absent from Opal.
 
+[![Build Status](https://travis-ci.org/ajjahn/opal-uri.svg?branch=master)](https://travis-ci.org/ajjahn/opal-uri)
+
 ## Installation
 
 Add this line to your application's Gemfile:
