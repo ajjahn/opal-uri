@@ -33,9 +33,7 @@ RSpec.describe URI do
     end
 
     it 'parses the query string' do
-      expect(url.search).to eq '?foo=bar&foo=baz&omg=lol'
-      expect(url.query[:foo]).to eq %w(bar baz)
-      expect(url.query[:omg]).to eq 'lol'
+      expect(url.query).to eq 'foo=bar&foo=baz&omg=lol'
     end
 
     it 'parses the fragment' do
