@@ -6,6 +6,10 @@ class URI
     https: 443,
   }
 
+  def self.parse(url)
+    new(url)
+  end
+
   def initialize(url)
     @url = url
     # scheme://conn_data/path?query#hash
