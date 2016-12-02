@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["jgaskins@gmail.com"]
 
   spec.summary       = %q{Minimalist URI support for Opal}
-  spec.homepage      = "https://github.com/clearwater-rb/bowser"
+  spec.homepage      = "https://github.com/ajjahn/opal-uri"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
