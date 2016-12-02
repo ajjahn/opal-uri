@@ -1,3 +1,4 @@
+require "uri/common"
 require "uri/generic"
 
 module URI
