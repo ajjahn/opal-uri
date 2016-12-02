@@ -9,10 +9,7 @@ module URI
       _, scheme, connection_data, path, query, fragment = match.to_a
 
       connection_data = connection_data.split(/@/)
-      userinfo = nil
-      if connection_data.size > 1
-        userinfo = connection_data.first
-      end
+      userinfo = connection_data.size > 1 ? connection_data.first : nil
       host, port = connection_data.last.split(/:/)
 
       port = port.to_i
